@@ -1,0 +1,215 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/clearpath/moose/protos/Moose.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/conveyors/protos/ConveyorBelt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "../protos/UnevenTerrain.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/Road.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/RoadLine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/nvidia/jetbot/protos/JetBotRaspberryPiCamera.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/devices/sharp/protos/SharpGP2Y0A02YK0F.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.05127837670580552 0.8723365227125385 -0.4862093368336464 0.2553143014091666
+  position 11.845454657714033 -0.9310681812828894 3.177995429025481
+  follow "moose"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0 -0.66
+  floorSize 50 50
+  floorTileSize 100 100
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.3
+  wallHeight 2
+  wallAppearance BrushedAluminium {
+    IBLStrength 2
+  }
+}
+Moose {
+  translation 21.3109 -1.66275 -0.377526
+  rotation -0.010400123262591408 0.005099611519840246 0.9999329134489322 1.5928510519347365
+  controller "moose_path_following"
+  bodySlot [
+    Wall {
+      translation -0.292496 -0.00430423 -0.02
+      rotation 0 0 -1 0.261796
+      size 0.2 1.4 0.3
+      appearance Roughcast {
+        colorOverride 0.1 0.1 0.1
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+      }
+    }
+    SharpGP2Y0A02YK0F {
+      translation 1.17 0 0.07
+      rotation 0 0 1 3.14159
+      name "dist"
+    }
+    JetBotRaspberryPiCamera {
+      translation 1.43 0 -0.21
+      rotation 0 1 0 1.5708
+      fieldOfView 1
+      width 1
+      height 1
+      near 0.1
+    }
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+ConveyorBelt {
+  translation 23.56 -1.07 -0.74
+  rotation 0 0 1 3.14159
+  size 3 1.1 1
+  borderThickness 1e-05
+  borderHeight 0
+  speed 2
+}
+Road {
+  translation 0 0 -0.6
+  width 12
+  numberOfLanes 4
+  roadBorderHeight 0
+  roadBorderWidth [
+    0.0001
+  ]
+  wayPoints [
+    -25 0 0
+    25 0 0
+  ]
+}
+Road {
+  translation 0 0 -0.55
+  name "road(1)"
+  width 30
+  lines [
+    RoadLine {
+      color 1 1 0
+      type "continuous"
+      width 1
+    }
+  ]
+  roadBorderHeight 0
+  roadBorderWidth [
+    1e-05
+  ]
+  wayPoints [
+    0 -25 0
+    0 25 0
+  ]
+}
+UnevenTerrain {
+  translation 0 -2.24 -2.35
+  randomSeed 14
+  flatBounds TRUE
+  perlinNOctaves 4
+}
+Wall {
+  translation 21.29 0.17 -0.57
+  name "wall(6)"
+  size 0.8 0.5 0.01
+  appearance Roughcast {
+    colorOverride 1 0 0
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 23.57 -0.409995 -1.06
+  rotation 0 0 1 -1.5707953071795862
+  size 0.2 3 2.4
+}
+Wall {
+  translation -23.67 -0.570063 -1.06
+  rotation 0 0 -1 1.5708
+  name "wall(2)"
+  size 0.2 3 2.4
+}
+Wall {
+  translation -2.88003 -23.5801 -1.06
+  rotation 0 0 1 3.14159
+  name "wall(4)"
+  size 0.2 3 2.4
+}
+Wall {
+  translation -0.34003 -23.5801 -1.06
+  rotation 0 0 1 3.14159
+  name "wall(5)"
+  size 0.2 3 2.4
+}
+Wall {
+  translation -23.67 1.72994 -1.06
+  rotation 0 0 -1 1.5708
+  name "wall(3)"
+  size 0.2 3 2.4
+}
+Wall {
+  translation 23.57 -1.69999 -1.06
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(1)"
+  size 0.2 3 2.4
+}
+CardboardBox {
+  translation 24.65 -1.01 0.69
+  name "cardboard box(2)"
+  mass 3
+}
+ConveyorBelt {
+  translation -23.72 0.56 -1.41
+  rotation 0 0 1 3.14159
+  name "conveyor belt(1)"
+  size 3 2.2 1
+  borderThickness 1e-05
+  borderHeight 0
+}
+ConveyorBelt {
+  translation -1.61 -23.59 -1.44
+  rotation 9.58974e-09 -9.58977e-09 1 -1.5708053071795867
+  name "conveyor belt(2)"
+  size 3 2.5 1
+  borderThickness 1e-05
+  borderHeight 0
+}
+Wall {
+  translation -21.0143 0.951268 0.29
+  rotation 0 0 -1 0.6544956938995746
+  name "wall(7)"
+  size 0.1 4 0.6
+  appearance Roughcast {
+    colorOverride 0.5 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation -1.83819 -20.9229 0.29
+  rotation 0 0 1 0.916301
+  name "wall(8)"
+  size 0.1 4 0.6
+  appearance Roughcast {
+    colorOverride 0.5 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
