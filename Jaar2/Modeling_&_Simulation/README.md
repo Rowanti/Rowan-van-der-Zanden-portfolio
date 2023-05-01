@@ -1,0 +1,1 @@
+Er moest voor deze opdracht een deel van de kofferafhandeling op een vliegveld worden gesimuleerd. Ik heb hiervoor gekozen om de verplaatsing van koffers naar een "vliegtuig" te simuleren. Het doel van deze opdracht was, een valide simulatie maken.
