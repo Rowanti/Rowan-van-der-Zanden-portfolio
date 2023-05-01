@@ -1,1 +1,2 @@
 Voor het eerste project heb ik samen met mijn groep een lift gemaakt die gebruikt moest maken van I2C. De lift kon d.m.v. een losse keypad naar een specifieke verdieping worden aangeroepen. Ook waren er per verdieping twee knoppen om de lift naar deze verdieping te laten sturen. 
+De locatie van de liftkooi kon makkelijk gezien worden door de 7-segment display die de verdieping aangaf waarop de liftkooi zich bevond, ook was er per verdieping een rode en een groene led om aan te duiden of de lift op deze verdieping was.
