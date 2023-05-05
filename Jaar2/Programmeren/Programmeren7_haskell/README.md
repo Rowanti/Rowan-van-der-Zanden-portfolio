@@ -1,1 +1,1 @@
-Voor deze opdrachten heb ik kennis gemaakt met de programmeertaal haskell
+Voor deze duo opdrachten heb ik kennis gemaakt met de programmeertaal haskell.
