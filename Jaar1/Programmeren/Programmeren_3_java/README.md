@@ -1,1 +1,1 @@
-Voor deze opdracht heb ik voor het eerst met threads gewerkt om een haven te simularen met kranen die verschillende soorten containers van een schip afpakken en deze op een kade neerzetten die daarna weer opgepakt worden door vrachtwagens
+Voor deze opdracht heb ik voor het eerst met threads gewerkt om een haven te simuleren. De verschillende kranen pakte verschillende soorten containers van een schip en deze werden op de kade neergezetten. Vervolgens werden de verschillende soorten containers vervoerd door de vrachtwagens.
