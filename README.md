@@ -9,3 +9,5 @@ Ik ben een gemotiveerde 4de jaars student aan de opleiding technische informatic
 - Zelfrijdende marktwagen voor externe opdrachtgever: C++, Python, LoRa, Bluetooth, GPS, Arduino, Raspberry pi
 
 Mijn 4de studiejaar start ik met de minor Embedded Systems, Hogeschool Rotterdam.
+
+Binnenin deze Github pagina zijn alle projecten/opdrachten waar ik aa heb gewerkt te zien.
