@@ -10,4 +10,4 @@ Ik ben een gemotiveerde 4de jaars student aan de opleiding technische informatic
 
 Mijn 4de studiejaar start ik met de minor Embedded Systems, Hogeschool Rotterdam.
 
-Binnenin deze Github pagina zijn alle projecten/opdrachten waar ik aa heb gewerkt te zien.
+Binnenin deze Github pagina zijn alle projecten/opdrachten waar ik aan heb gewerkt te zien.
